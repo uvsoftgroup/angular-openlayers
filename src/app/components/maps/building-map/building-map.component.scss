@@ -1,0 +1,280 @@
+.map-details {
+  .ui-tree .ui-tree-container {
+      overflow: visible;
+  }
+  .main {
+      display: block;
+      height: auto;
+      background: rgb(255, 255, 255);
+      border-radius: 5px;
+      width: 100%;
+      box-shadow: 0 0 16px rgb(216, 13, 13);
+      margin-left: 15px;
+  }
+
+  .details {
+      padding: 0 10px;
+      width: 100%;
+      vertical-align: top;
+  }
+
+  .topic {
+      background: #e9e3e3;
+      text-align: left;
+      margin-top: 10px;
+      margin-bottom: 12px;
+      color: #0e90db;
+      font-size: 14px;
+      padding: 12px;
+  }
+  .with-save-button {
+      width: 100%;
+      group-select > div {
+          width: 70%;
+          display: inline-block;
+      }
+      p-button {
+          width: 28%;
+          height: 28px;
+          vertical-align: top;
+          & > button {
+              width: 100%;
+              height: 100%;
+          }
+      }
+  }
+
+  .col3 {
+      display: inline-block;
+      vertical-align: top;
+      width: 33.33%;
+  }
+
+  .key,
+  .val {
+      padding: 5px 0;
+      padding-left: 5px;
+      display: inline-block;
+      text-align: left;
+  }
+
+  .key {
+      width: 50%;
+      padding-left: 12px;
+      vertical-align: top;
+  }
+
+  .val {
+      width: 50%;
+  }
+  .time-span-val {
+      width: 25%;
+  }
+
+  .dot {
+      height: 10px;
+      width: 10px;
+      background-color: rgb(128, 128, 128);
+      border-radius: 50%;
+      display: inline-block;
+  }
+
+  .green {
+      background-color: green;
+  }
+
+  .red {
+      background-color: red;
+  }
+
+  .dropdown,
+  .field {
+      background-color: #f7f8f9;
+      border-radius: 2px;
+  }
+  .coorI {
+      width: 27%;
+  }
+
+  .location {
+      input {
+          margin-right: 4px;
+      }
+  }
+  .locIcon {
+      height: 30px;
+      width: 29px;
+      background-color: #485258;
+      border-radius: 50%;
+      display: inline-block;
+      vertical-align: middle;
+      .icon {
+          margin: 5px;
+      }
+  }
+  select,
+  input {
+      background-color: #f7f8f9;
+      border: 1px solid #eef0f2;
+      color: #485258;
+      font-size: 14px;
+      margin: 2px 0;
+      line-height: 24px;
+  }
+  .footer {
+      margin: 0 15px 15px 15px;
+  }
+  .searchbar {
+      border-bottom: 1px solid #e3e7e9;
+      input {
+          margin-left: 12px;
+          background-color: transparent;
+          border: 0;
+      }
+  }
+  .change-ip {
+      .ui-button {
+          border: 0;
+          background-color: #485258;
+          height: 36px;
+          width: 151px;
+          color: white;
+          border-radius: 3px;
+      }
+  }
+  .ip-config {
+      text-align: right;
+  }
+  textarea {
+      background-color: #f7f8f9;
+      border: 1px solid #eef0f2;
+  }
+  @media only screen and (min-width: 1660px) {
+      .coorI {
+          width: 28%;
+      }
+  }
+  @media only screen and (min-width: 1025px) {
+      .key {
+          width: 35%;
+          padding-left: 12px;
+      }
+
+      .val {
+          width: 65%;
+      }
+  }
+  .add-button {
+      text-align: center;
+      vertical-align: middle;
+      display: inline-block;
+      padding: 5px;
+      height: 40px;
+      width: 100px;
+      border-radius: 4px;
+      background-color: #eedfcc;
+      color: #fff;
+      border: 0;
+      margin-left: 10px;
+      cursor: pointer;
+  }
+
+  .edit-button {
+      text-align: center;
+      vertical-align: middle;
+      display: inline-block;
+      padding: 5px;
+      height: 40px;
+      width: 100px;
+      border-radius: 4px;
+      background-color: #4a72ca;
+      color: #fff;
+      border: 0;
+      margin-left: 10px;
+      cursor: pointer;
+  }
+
+  .delete-button {
+      text-align: center;
+      vertical-align: middle;
+      display: inline-block;
+      padding: 5px;
+      height: 40px;
+      width: 100px;
+      border-radius: 4px;
+      background-color: saddlebrown;
+      color: #fff;
+      border: 0;
+      margin-left: 10px;
+      cursor: pointer;
+  }
+
+  .new-button {
+      text-align: center;
+      vertical-align: middle;
+      display: inline-block;
+      padding: 5px;
+      height: 40px;
+      width: 100px;
+      border-radius: 4px;
+      background-color: rgb(84, 189, 140);
+      color: #fff;
+      border: 0;
+      margin-left: 10px;
+      cursor: pointer;
+  }
+
+  .save-button {
+      text-align: center;
+      vertical-align: middle;
+      display: inline-block;
+      padding: 5px;
+      height: 40px;
+      width: 100px;
+      border-radius: 4px;
+      background-color: rgb(9, 184, 102);
+      color: #fff;
+      border: 0;
+      margin-left: 10px;
+      cursor: pointer;
+  }
+
+  .cancel-button {
+      text-align: center;
+      vertical-align: middle;
+      display: inline-block;
+      padding: 5px;
+      height: 40px;
+      width: 100px;
+      border-radius: 4px;
+      background-color: rgb(189, 183, 132);
+      color: #fff;
+      border: 0;
+      margin-left: 10px;
+      cursor: pointer;
+  }
+
+  #marker {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #088;
+    border-radius: 10px;
+    background-color: #0ff;
+    opacity: 0.5;
+  }
+
+  #vienna {
+    text-decoration: none;
+    color: white;
+    font-size: 11pt;
+    font-weight: bold;
+    text-shadow: black 0.1em 0.1em 0.2em;
+  }
+
+  .popover-content {
+    min-width: 180px;
+  }
+
+}
+
+

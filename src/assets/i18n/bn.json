@@ -1,0 +1,152 @@
+{
+  "gon-nongeo-app": {
+    "title": "জিও এবং ননজিও অ্যাপ্লিকেশন"
+  },
+  "user-registration": {
+    "userRegistrationId": "ব্যবহারকারী আইডি",
+    "userAddressId": "ঠিকানা আইডি",
+    "userRegistrationFName":"নামের প্রথমাংশ",
+    "userRegistrationMName":"মধ্যম",
+    "userRegistrationLName":"শেষাংশ",
+    "userRegistrationfullName":"পূর্ণ নাম",
+    "userRegistrationCrDate":"নিবন্ধকরণ তারিখ",
+    "userRegistrationLDate":"সর্বশেষ পরিবর্তিত তারিখ",
+    "userPhoneNr":"ফোন নম্বর",
+    "userMobileNr":"মোবাইল নম্বর",
+    "userWww":"ওয়েব ঠিকানা",
+    "userRegistrationPassword":"পাসওয়ার্ড",
+    "userRegistrationName":"লগইন জন্য ব্যবহারকারীর নাম",
+    "userMail":"ইমেল ঠিকানা"
+  },
+  "header-footer": {
+    "home": "হোম পৃষ্ঠা",
+    "product": "পণ্য",
+    "service": "সেবা",
+    "news": "খবর",
+    "about": "সম্পর্কিত"
+  },
+  "languages": {
+    "en": "English",
+    "de": "Deutsch",
+    "fr": "French",
+    "bn": "বাংলা"
+  },
+
+  "main_app_actions": {
+    "title": "প্রধান অ্যাপ্লিকেশন :",
+    "addressRegistrationActions": "ঠিকানা নিবন্ধকরণ",
+    "userRegistrationActions": "ব্যবহারকারী নিবন্ধকরণ",
+    "userRoleRegistrationActions": "ব্যবহারকারীর ভূমিকা নিবন্ধকরণ",
+    "plotRegistrationActions": "প্লটের নিবন্ধকরণ",
+    "buildingRegistrationActions": "ইমারত নিবন্ধকরণ",
+    "floorRegistrationActions": "ইমারত তলার নিবন্ধকরণ",
+    "unitRegistrationActions":"ইমারত তলার ইউনিট নিবন্ধকরণ",
+    "drawModifyVectorFeature": "ভেক্টর বৈশিষ্ট্য অঙ্কন এবং পরিবর্তন করুন"
+  },
+
+  "geo_map_actions": {
+    "title": "জিও মানচিত্র ওয়েব পোর্টাল:",
+    "addressRegistred": "নিবন্ধিত ব্যবহারকারী ঠিকানা তথ্য",
+    "plotRegistred": "নিবন্ধিত প্লটের তথ্য",
+    "buildingRegistred": "নিবন্ধিত ইমারত তথ্য",
+    "floorRegistred": "নিবন্ধিত ইমারত তলার তথ্য",
+    "unitRegistred": "নিবন্ধিত ইমারত তলার ইউনিট তথ্য",
+    "geoMapPortal": "জিও মানচিত্র ওয়েব পোর্টাল"
+
+
+  },
+
+  "ui_buttons": {
+    "title": "নতুন ব্যবহারকারীর জন্য নিবন্ধন তথ্য",
+    "save": "সংরক্ষণ",
+    "reset": "পুন:স্থাপন",
+    "cancel":"বাতিল",
+    "new":"নতুন",
+    "edit":"হালনাগাদ",
+    "delete":"মুছে ফেলা",
+    "mapLoadingButton":"স্থানাঙ্ক পয়েন্টগুলি লোড করুন",
+    "mapLoadingCenterButton":"মানচিত্র থেকে কেন্দ্রের স্থানাঙ্ক"
+
+
+  },
+  "address-registration": {
+    "adId": "Address Id",
+    "userRefNrId": "User Reference Number",
+    "adRefId": "Address Reference Id",
+    "adType": "Address Type",
+    "adCity": "Address City Name",
+    "adRoad": "Road Name",
+    "adRoadType": "Road Type",
+    "adHouseNumber": "House Number",
+    "adPostCode": "Postal Code",
+    "geoType": "Geometry Type",
+    "wktToGeometry": "Coordinate Points",
+    "adCountry": "Country",
+    "mapLoading":"Load Coordinate Points From Map Digitization"
+  },
+
+  "plot-registration": {
+    "plId": "Plot Id",
+    "plAddressId": "Plot Address Id",
+    "userRefNrId": "User Reference Id",
+    "plCode": "Plot Code",
+    "plName": "Name",
+    "plType": "Use Type",
+    "plNumber": "Number",
+    "plMonzaNumber": "Monza Number",
+    "plCSNumber": "CS Number",
+    "plMSNumber": "MS Number",
+    "plRemark": "Remark or Note Registration",
+    "plTotalArea": "Total Area [Sq.M]",
+    "plTotalBuildingCoverArea":"Total Building Area [Sq.M]",
+    "plNumberOfBuilding": "Number of Building",
+    "plHeightFromMSL": "Height From MSL [M]",
+    "plCenterLongitude": "Center Coordinate Point Longitude",
+    "plCenterLatitude": "Center Coordinate Point Latitude",
+    "plLayoutPicture": "Layout Map",
+    "utilityLocationMap": "পরিষেবা অবস্থান মানচিত্র",
+    "mapLoadingCenter":"মানচিত্র থেকে কেন্দ্রের স্থানাঙ্ক পয়েন্ট"
+  },
+
+  "building-registration": {
+    "buId": "ইমারত",
+    "buAddressId": "ঠিকানা আইডি",
+    "userRefNrId": "ব্যবহারকারী আইডি",
+    "buPlId": "Plot Id",
+    "buCode": "ইমারত কোড",
+    "buName": "নাম",
+    "buUseType": "ব্যবহারের ধরণ",
+    "buNumberOfFloor": "Number Of Floor",
+    "buTotalHeight": "Total Height [মিটার ]",
+    "buNumberOfFloorUnit": "Number Of Floor Unit",
+    "buTotalGroundArea": "Total Ground Area [বর্গ,মিটার ]",
+    "buTotalFloorArea": "Total Floor Area [বর্গ,মিটার ]",
+    "buSetBackFront":"Set Back Front [মিটার ]",
+    "buSetBackBack":"Set Back Back [মিটার ]",
+    "buSetBackRight":"Set Back Right [মিটার ]",
+    "buSetBackLeft":"Set Back Left [মিটার ]",
+    "buCenterLongitude": "কেন্দ্র স্থানাঙ্ক পয়েন্ট দ্রাঘিমাংশ",
+    "buCenterLatitude": "কেন্দ্র স্থানাঙ্ক পয়েন্ট অক্ষাংশ",
+    "buLayoutPicture": "ইমারত ছবি",
+    "buUtilityPicture": "পরিষেবা অবস্থান মানচিত্র",
+    "mapLoadingCenter":"মানচিত্র থেকে কেন্দ্রের স্থানাঙ্ক পয়েন্ট"
+  },
+
+  "floor-registration": {
+    "flId": "ইমারত তলার আইডি",
+    "flBuId": "ইমারত আইডি",
+    "userRefNrId": "ব্যবহারকারী আইডি",
+    "flCode": "ইমারত তলার কোড",
+    "flName": "নাম",
+    "flUseType": "ব্যবহারের ধরণ",
+    "flNumberOfFloorUnit": "ইউনিটের সংখ্যা",
+    "flTotalFloorArea": "মোট তল এলাকা [বর্গ,মিটার]",
+    "flTotalFloorHeight": "মোট মেঝে উচ্চতা [মিটার]",
+    "flCenterLongitude": "কেন্দ্র স্থানাঙ্ক পয়েন্ট দ্রাঘিমাংশ",
+    "flCenterLatitude": "কেন্দ্র স্থানাঙ্ক পয়েন্ট অক্ষাংশ",
+    "flLayoutPicture": " ইমারত তলার ছবি",
+    "flUtilityPicture":"পরিষেবা অবস্থান মানচিত্র",
+    "flRemark": "মন্তব্য"
+
+  }
+}

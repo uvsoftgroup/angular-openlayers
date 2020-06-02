@@ -1,21 +1,76 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<button (click)="useLanguage('en')">{{ 'languages.en' |translate}}</button>
+<button (click)="useLanguage('de')">{{ 'languages.de' |translate}}</button>
+<button (click)="useLanguage('fr')">{{ 'languages.fr' |translate}}</button>
+<button (click)="useLanguage('bn')">{{ 'languages.bn' |translate}}</button>
+
+<app-header-footer></app-header-footer>
+
+<h5>{{ 'geo_map_actions.title' | translate }} </h5>
+<table>
+  <tr>
+    <td>
+
+      <div>
+        <button class="new-button" (click)="editorTypeSelection('geomapportal')">
+          {{ 'geo_map_actions.geoMapPortal' | translate }}</button>
+      </div>
+
+      <div>
+        <button class="new-button" (click)="editorTypeSelection('drawModifyVectorFeature')">
+          {{ 'main_app_actions.drawModifyVectorFeature' | translate }}
+        </button>
+      </div>
+
+
+      <div>
+        <button class="new-button" (click)="editorTypeSelection('mapaddresses')">
+          {{ 'geo_map_actions.addressRegistred' | translate }}</button>
+      </div>
+      <div>
+        <button class="new-button" (click)="editorTypeSelection('mapplots')">
+          {{ 'geo_map_actions.plotRegistred' | translate }}
+        </button>
+
+      </div>
+
+      <div>
+        <button class="new-button" (click)="editorTypeSelection('mapbuildings')">
+          {{ 'geo_map_actions.buildingRegistred' | translate }}
+        </button>
+
+      </div>
+
+      <div>
+        <button class="new-button" (click)="editorTypeSelection('mapfloors')">
+          {{ 'geo_map_actions.floorRegistred' | translate }}
+        </button>
+
+      </div>
+      <div>
+        <button class="new-button" (click)="editorTypeSelection('mapunits')">
+          {{ 'geo_map_actions.unitRegistred' | translate }}
+        </button>
+
+      </div>
+
+    </td>
+    <td>
+      <app-draw-modify-vector-feature *ngIf="drawModifyVectorFeature"></app-draw-modify-vector-feature></td>
+      <td>
+        <app-geo-map-portal *ngIf="showGeoMapPortal"></app-geo-map-portal>
+      </td>
+
+  </tr>
+
+  <tr>
+    <td>
+      <div id="mouse-position"></div>
+      <!--  <div id="objectInfo"></div>-->
+    </td>
+
+  </tr>
+</table>
+
 
 <router-outlet></router-outlet>

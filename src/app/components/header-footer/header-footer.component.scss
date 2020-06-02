@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+
+#header {
+  text-align:left;
+  border-style: solid;
+  color:white;
+  background-color: black;
+  padding: 0px;
+}
+
+#footer{
+  text-align:center;
+  border:solid;
+  color:white;
+  padding: 0px;
+  background-color: black;
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+
+}
+#scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+#scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+}
+
+#scrollmenu a:hover {
+  background-color: #777;
+}
+
+

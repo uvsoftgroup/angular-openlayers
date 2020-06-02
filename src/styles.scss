@@ -1,1 +1,291 @@
 /* You can add global styles to this file, and also import other style files */
+
+.map {
+	height: 87%;
+	width: 80%;
+	position: absolute;
+	left:320px;
+  top: 75px;
+  right:45px;
+}
+
+.geomap {
+	height: 80%;
+	width: 80%;
+	position: absolute;
+	left:350px;
+  top: 69px;
+  right:80px;
+}
+.mapdrawandmodifyForForm {
+	height: 40%;
+	width: 50%;
+	position: absolute;
+	left:820px;
+  top: 450px;
+
+}
+.mapLoading {
+  background-color:#BDB76B;
+  border: none;
+  color:none;
+  width:205px;
+  padding: 8px 5px;
+  text-align:left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-style: italic;
+  font-weight: bold;
+  }
+
+.mapdrawandmodify {
+	height: 87%;
+	width: 70%;
+	position: absolute;
+	left:500px;
+  top: 70px;
+  right:150px;
+}
+
+.mapgeoapp {
+	height: 400px;
+	width: 990px;
+	position: absolute;
+	left:350px;
+	top: 51px;
+}
+
+.mapgeoappportal {
+	height: 400px;
+	width: 1300px;
+	position: absolute;
+	left:10px;
+	top: 51px;
+}
+
+.navbar-default {
+  background: #6db33f;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+.formError {
+  color: red;
+  font-style: italic;
+}
+
+.error{
+  color: red;
+  font-size: 15px;
+}
+.user{
+  color: blue;
+  font-size: 15px;
+}
+table {
+  border-collapse: collapse;
+}
+
+
+table#userRole th,tr,td {
+border: 1px solid black;
+background-color: #eee;
+}
+
+table#footer th,tr,td {
+background-color: #eee;
+}
+
+table#userRegistartion  th,tr,td {
+ border: 2px solid white;
+background-color: white;
+}
+
+table#userRegistartion th {
+background-color: black;
+color: white;
+}
+
+.button {
+background-color:#8FBC8F;
+border: none;
+color:none;
+width:275px;
+padding: 10px 5px;
+text-align:left;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+font-style: italic;
+font-weight: bold;
+}
+
+.buttonCalculation {
+background-color:#BDB76B;
+border: none;
+color:none;
+width:225px;
+padding: 10px 5px;
+text-align:left;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+font-style: italic;
+font-weight: bold;
+}
+
+.buttonMap {
+background-color:#BDB76B;
+border: none;
+color:none;
+width:270px;
+padding: 8px 5px;
+text-align:left;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+font-style: italic;
+font-weight: bold;
+}
+.buttonSaveSetMap {
+  background-color:#8FBC8F;
+  border: none;
+  color:none;
+  width:270px;
+  padding: 6px 5px;
+  text-align:left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-style: italic;
+  font-weight: bold;
+}
+
+
+.new-button {
+  background-color:#eee;
+  border: none;
+  color:none;
+  width:270px;
+  padding: 8px 5px;
+  text-align:left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-style: italic;
+  font-weight: bold;
+  }
+
+  .new-button-from {
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 5px;
+    height: 40px;
+    width: 100px;
+    border-radius: 4px;
+    background-color: #4a72ca;
+    color: #fff;
+    border: 0;
+    margin-left: 10px;
+    cursor: pointer;
+    }
+
+
+  .add-button {
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 5px;
+    height: 40px;
+    width: 100px;
+    border-radius: 4px;
+    background-color: #eedfcc;
+    color: #fff;
+    border: 0;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.edit-button {
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 5px;
+    height: 40px;
+    width: 100px;
+    border-radius: 4px;
+    background-color: #4a72ca;
+    color: #fff;
+    border: 0;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.delete-button {
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 5px;
+    height: 40px;
+    width: 100px;
+    border-radius: 4px;
+    background-color: saddlebrown;
+    color: #fff;
+    border: 0;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.save-button {
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 5px;
+    height: 40px;
+    width: 100px;
+    border-radius: 4px;
+    background-color: rgb(9, 184, 102);
+    color: #fff;
+    border: 0;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.cancel-button {
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 5px;
+    height: 40px;
+    width: 100px;
+    border-radius: 4px;
+    background-color: rgb(189, 183, 132);
+    color: #fff;
+    border: 0;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

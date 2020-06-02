@@ -1,0 +1,155 @@
+{
+  "gon-nongeo-app": {
+    "title": "Geo and Non-Geo Application"
+  },
+  "user-registration": {
+    "userRegistrationId": "User Registration Id",
+    "userAddressId": "Address Id",
+    "userRegistrationFName":"First Name",
+    "userRegistrationMName":"Middle Name",
+    "userRegistrationLName":"Last Name",
+    "userRegistrationfullName":"Full Name",
+    "userRegistrationCrDate":"Create Date",
+    "userRegistrationLDate":"Last Modified Date",
+    "userMail":"E-Mail",
+    "userPhoneNr":"Phone Number",
+    "userMobileNr":"Mobile Number",
+    "userWww":"Web Address",
+    "userRegistrationName":"User Name",
+    "userRegistrationPassword":"Password"
+  },
+  "header-footer": {
+    "home": "Home",
+    "product": "Product",
+    "service": "Service",
+    "news": "News",
+    "about": "About",
+    "copyright":"@Copyright:2018-2019 uvsoftgroup"
+  },
+
+  "languages": {
+    "en": "English",
+    "de": "Deutsch",
+    "fr": "French",
+    "bn": "বাংলা"
+  },
+
+  "main_app_actions": {
+    "title": "Main Application Content",
+    "addressRegistrationActions": "Address Registration Actions",
+    "userRegistrationActions": "User Registration Actions",
+    "userRoleRegistrationActions": "User Role Registration Actions",
+    "plotRegistrationActions": "Plot Registration Actions",
+    "buildingRegistrationActions": "Building Registration Actions",
+    "floorRegistrationActions": "Floor Registration Actions",
+    "unitRegistrationActions":"Unit Registration Actions",
+    "drawModifyVectorFeature": "Vector Feature Draw & Modify"
+  },
+
+  "geo_map_actions": {
+    "title": "Geo Map Web Portal",
+    "addressRegistred": "Registred User Address Info",
+    "plotRegistred": "Registred Plot Info",
+    "buildingRegistred": "Registred Building Info",
+    "floorRegistred": "Registred Floor Info",
+    "unitRegistred": "Registred Unit Info",
+    "geoMapPortal": "Geo Map Portal",
+    "geoservermap": "GeoServer Maps"
+
+  },
+
+  "ui_buttons": {
+    "title": "New User Registration",
+    "save": "Save",
+    "reset": "Reset",
+    "cancel":"Cancel",
+    "new":"New",
+    "edit":"Edit",
+    "delete":"Delete",
+    "mapLoadingButton":"Load Coordinate Points",
+    "mapLoadingCenterButton":"Load Center Coordinate Points"
+
+
+  },
+
+  "address-registration": {
+    "adId": "Address Id",
+    "userRefNrId": "User Reference Number",
+    "adRefId": "Address Reference Id",
+    "adType": "Address Type",
+    "adCity": "Address City Name",
+    "adRoad": "Road Name",
+    "adRoadType": "Road Type",
+    "adHouseNumber": "House Number",
+    "adPostCode": "Postal Code",
+    "geoType": "Geometry Type",
+    "wktToGeometry": "Polygon Coordinate Points[lon,lat]",
+    "adCountry": "Country",
+    "mapLoading":"Load Coordinate Points From Map Digitization"
+  },
+
+  "plot-registration": {
+    "plId": "Plot Id",
+    "plAddressId": "Plot Address Id",
+    "userRefNrId": "User Reference Id",
+    "plCode": "Plot Code",
+    "plName": "Name",
+    "plType": "Use Type",
+    "plNumber": "Number",
+    "plMonzaNumber": "Monza Number",
+    "plCSNumber": "CS Number",
+    "plMSNumber": "MS Number",
+    "plRemark": "Remark or Note Registration",
+    "plTotalArea": "Total Area [Sq.M]",
+    "plTotalBuildingCoverArea":"Total Building Area [Sq.M]",
+    "plNumberOfBuilding": "Number of Building",
+    "plHeightFromMSL": "Height From MSL [M]",
+    "plCenterLongitude": "Center Coordinate Point Longitude",
+    "plCenterLatitude": "Center Coordinate Point Latitude",
+    "plLayoutPicture": "Layout Map",
+    "utilityLocationMap": "Utility Location Map ",
+    "mapLoadingCenter":"Center Coordinate Point From Map"
+  },
+
+
+  "building-registration": {
+    "buId": "Building Id",
+    "buAddressId": "Building Address Id",
+    "userRefNrId": "User Reference Id",
+    "buPlId": "Plot Id",
+    "buCode": "Building Code",
+    "buName": "Name",
+    "buUseType": "Usage Type",
+    "buNumberOfFloor": "Number Of Floor",
+    "buTotalHeight": "Total Height [M]",
+    "buNumberOfFloorUnit": "Number Of Floor Unit",
+    "buTotalGroundArea": "Total Ground Area [Sq.M]",
+    "buTotalFloorArea": "Total Floor Area [Sq.M]",
+    "buSetBackFront":"Set Back Front [M]",
+    "buSetBackBack":"Set Back Back [M]",
+    "buSetBackRight":"Set Back Right [M]",
+    "buSetBackLeft":"Set Back Left [M]",
+    "buCenterLongitude": "Center Coordinate Point Longitude",
+    "buCenterLatitude": "Center Coordinate Point Latitude",
+    "buLayoutPicture": "Layout Map",
+    "buUtilityPicture": "Utility Location Map ",
+    "mapLoadingCenter":"Center Coordinate Point From Map"
+  },
+
+  "floor-registration": {
+    "flId": "Floor Id",
+    "flBuId": "Building Id",
+    "userRefNrId": "User Reference Id",
+    "flCode": "Floor Code",
+    "flName": "Name",
+    "flUseType": "Usage Type",
+    "flNumberOfFloorUnit": "Number Of Unit",
+    "flTotalFloorArea": "Total Floor Area [Sq.M]",
+    "flTotalFloorHeight": "Total Floor Height [M]",
+    "flCenterLongitude": "Center Coordinate Point Longitude",
+    "flCenterLatitude": "Center Coordinate Point Latitude",
+    "flLayoutPicture": "Layout Map",
+    "flRemark": "Remark",
+    "flUtilityPicture": "Utility Location Map"
+  }
+}

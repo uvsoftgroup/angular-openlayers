@@ -1,0 +1,42 @@
+{
+    "/uvsoftgroupgeospatial/*": {
+        "target": "https://localhost:8077/uvsoftgroupgeospatial",
+        "secure": false,
+        "logLevel": "debug",
+        "pathRewrite": {
+            "^/uvsoftgroupgeospatial": ""
+        },
+        "changeOrigin": true
+    },
+
+    "/geospatialrestapiapp/*": {
+      "target": "https://localhost:9003/geospatialrestapiapp",
+      "secure": false,
+      "logLevel": "debug",
+      "pathRewrite": {
+          "^/geospatialrestapiapp": ""
+      },
+      "changeOrigin": true
+  },
+
+  "/registrationapi/*": {
+    "target": "https://localhost:9004/registrationapi",
+    "secure": false,
+    "logLevel": "debug",
+    "pathRewrite": {
+        "^/registrationapi": ""
+    },
+    "changeOrigin": true
+},
+
+  "/geoservermapservice/*": {
+    "target": "http://localhost:7777/geoserver/uvsoftgroupgeospatial/wms",
+    "secure": false,
+    "logLevel": "debug",
+    "pathRewrite": {
+        "^/geoservermapservice": ""
+    },
+    "changeOrigin": true
+}
+
+}

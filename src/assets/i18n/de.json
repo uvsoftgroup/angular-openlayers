@@ -1,0 +1,56 @@
+{
+  "gon-nongeo-app": {
+    "title": "Geo- und NonGeo-Anwendung"
+  },
+  "user-registration": {
+    "userRegistrationId": "ID der Benutzerregistrierung",
+    "userAddressId": "Adress-ID"
+  },
+  "header-footer": {
+    "home": "Hauptmenü",
+    "product": "Produkt",
+    "service": "Dienstleistung",
+    "news": "Nachrichten",
+    "about": "Überall"
+  },
+  "languages": {
+    "en": "English",
+    "de": "Deutsch",
+    "fr": "French",
+    "bn": "বাংলা"
+  },
+
+  "main_app_actions": {
+    "title": "Hauptanwendungsinhalt",
+    "addressRegistrationActions": "Adressregistrierungsaktionen",
+    "userRegistrationActions": "bunetzer registration Actions",
+    "userRoleRegistrationActions": "User Role Registration Actions",
+    "plotRegistrationActions": "Plot Registration Actions",
+    "buildingRegistrationActions": "Building Registration Actions",
+    "floorRegistrationActions": "Floor Registration Actions",
+    "unitRegistrationActions":"Unit Registration Actions"
+  },
+
+  "geo_map_actions": {
+    "title": "Geo Map Web Portal",
+    "addressRegistred": "Registred User Address Info",
+    "plotRegistred": "Registred Plot Info",
+    "buildingRegistred": "Registred Building Info",
+    "floorRegistred": "Registred Floor Info",
+    "unitRegistred": "Registred Unit Info"
+
+  },
+
+  "ui_buttons": {
+    "title": "New User Registration",
+    "save": "Save",
+    "reset": "Reset",
+    "cancel":"Cancel",
+    "new":"New",
+    "edit":"Edit",
+    "delete":"Delete"
+
+
+  }
+
+}

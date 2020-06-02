@@ -1,0 +1,54 @@
+{
+  "gon-nongeo-app": {
+    "title": "Application Geo et Non-Geo"
+  },
+  "user-registration": {
+    "userRegistrationId": "ID d'enregistrement d'utilisateur",
+    "userAddressId": "Identifiant d'adresse"
+  },
+  "header-footer": {
+    "home": "Heimkino",
+    "product": "Produkt",
+    "service": "Bedienung",
+    "news": "Fakenews",
+    "about": "Endstück"
+  },
+  "languages": {
+    "en": "English",
+    "de": "Deutsch",
+    "fr": "French",
+    "bn": "বাংলা"
+  },
+
+  "main_app_actions": {
+    "title": "Contenu principal de l'application",
+    "addressRegistrationActions": "Actions d'inscription d'adresse",
+    "userRegistrationActions": "User Registration Actions",
+    "userRoleRegistrationActions": "User Role Registration Actions",
+    "plotRegistrationActions": "Plot Registration Actions",
+    "buildingRegistrationActions": "Building Registration Actions",
+    "floorRegistrationActions": "Floor Registration Actions",
+    "unitRegistrationActions":"Unit Registration Actions"
+  },
+
+  "geo_map_actions": {
+    "title": "Geo Map Web Portal",
+    "addressRegistred": "Registred User Address Info",
+    "plotRegistred": "Registred Plot Info",
+    "buildingRegistred": "Registred Building Info",
+    "floorRegistred": "Registred Floor Info",
+    "unitRegistred": "Registred Unit Info"
+
+  },
+  "ui_buttons": {
+    "title": "New User Registration",
+    "save": "Save",
+    "reset": "Reset",
+    "cancel":"Cancel",
+    "new":"New",
+    "edit":"Edit",
+    "delete":"Delete"
+
+  }
+
+}
