@@ -17,11 +17,11 @@ framework as like Node.js,Angular,JavaScript & TypeScript, leaflet javascript we
 
 
 [YouTube Playlist] (https://www.youtube.com/playlist?list=PL61PaxtHbYMoeBZPjK6edf9KKbtNpy2zW)
-## 2_1:Development
+## 7_1:Development
 [<img src="https://img.youtube.com/vi/ej-nDNqVRVE/maxresdefault.jpg" width="100%">](https://youtu.be/ej-nDNqVRVE)
-## 2_2:Development
+## 7_2:Development
 [<img src="https://img.youtube.com/vi/mmgwuDDBiGY/maxresdefault.jpg" width="100%">](https://youtu.be/mmgwuDDBiGY)
-## 2_3:Development
+## 7_3:Development
 https://www.youtube.com/watch?v=hA3LTdkW0sw&t=5s
 [<img src="https://img.youtube.com/vi/hA3LTdkW0sw/maxresdefault.jpg" width="100%">](https://youtu.be/hA3LTdkW0sw)
 
