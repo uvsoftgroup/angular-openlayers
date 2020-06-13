@@ -49,6 +49,9 @@ export class DrawModifyVectorFeatureComponent implements OnInit {
   overlayGroupOSM: any;
   private separator = '/';
   proxyConfigUrl: any;
+  polygonString: any;
+  draw: any;
+
 
   public constructor(private http: HttpClient, private configserviceService: ConfigserviceService) {
     this.baseurl = 'http://localhost:7777/geoserver/uvsoftgroupgeospatial/wms'; // geoservermapservice
@@ -58,16 +61,12 @@ export class DrawModifyVectorFeatureComponent implements OnInit {
 
   public ngOnInit() {
     console.log('--------------ngOnInit()');
-    this.geometryTypes = [
-      { label: 'Point', value: 'Point' },
-      { label: 'LineString', value: 'LineString' },
-      { label: 'Polygon', value: 'Polygon' },
-      { label: 'Circle', value: 'Circle' }
-    ];
     this.drawModifyVectorFeature(90.37126734852791, 23.825515115835344);
   }
 
   public drawModifyVectorFeature(centerLocationLong: number, centerLocationLat: number) {
+
+    let draw, snap, typeSelect, content;
     console.log('--------------drawModifyVectorFeature()');
     // Mouse Position Control from click event into Map
     const mousePositionControl = new ol.control.MousePosition({
@@ -86,22 +85,22 @@ export class DrawModifyVectorFeatureComponent implements OnInit {
 
     const source = new VectorSource({ wrapX: false });
 
+    const sourcegeojson = new VectorSource({
+      url: 'assets/dataset/countries.geojson',
+      format: new ol.format.GeoJSON()
+    });
+
+    const vectorgeojsonLayer = new VectorLayer({
+      source: sourcegeojson,
+    });
+
     const vector = new VectorLayer({
-      source: source,
+      source: sourcegeojson,
       style: new Style({
-        fill: new Fill({
-          color: 'green'
-        }),
         stroke: new Stroke({
           color: '#A52A2A',
           width: 2
         }),
-        image: new CircleStyle({
-          radius: 7,
-          fill: new Fill({
-            color: '#B8860B'
-          })
-        })
       })
     });
 
@@ -111,7 +110,7 @@ export class DrawModifyVectorFeatureComponent implements OnInit {
 
     const modify = new Modify({
       features: select.getFeatures(),
-      source: source
+      source: sourcegeojson
     });
 
     /*
@@ -165,19 +164,20 @@ export class DrawModifyVectorFeatureComponent implements OnInit {
     const map = new ol.Map({
       interactions: defaultInteractions().extend([select, modify]),
       target: 'map2',
-      controls: ol.control.defaults({
+      controls: new ol.control.defaults({
         attributionOptions: {collapsible: false}
       }).extend([mousePositionControl, this.mapScale, this.overviewMap]),
 
       // OpenStreet Map Loading
       layers: [
          rasterOSM,
-         vector,
+         // vectorgeojsonLayer,
+          vector,
          this.overlayGroupOSM
         ],
       // Map view, center location and zoom level
       view: new ol.View({
-        center: ol.proj.fromLonLat([90.3717065602541, 23.82585617006994]),
+        center: new ol.proj.fromLonLat([90.3717065602541, 23.82585617006994]),
         zoom: 13
       })
     });
@@ -188,39 +188,42 @@ export class DrawModifyVectorFeatureComponent implements OnInit {
       console.log('-----------------modifyend:' + e.features.getArray().length);
     });
 
-    // global variable and also removable for selection
-    let draw, snap, polygonString, typeSelect;
 
+    // global variable and also removable for selection
+
+    content = document.getElementById('content');
     typeSelect = document.getElementById('type');
-    console.log('--------------Geometry Selection Type:' + typeSelect);
+
+    console.log('--------------Geometry Selection Type:' + typeSelect.value);
 
     function addInteractions() {
       draw = new Draw({
-        source: source,
+        source: sourcegeojson,
         type: typeSelect.value,
         minPoints: 3
       });
       map.addInteraction(draw);
 
       draw.on('drawend', function (e) {
-        polygonString = e.feature.getGeometry().getCoordinates();
-        console.log('--------------Draw Coordinate Points:' + polygonString);
+        this.polygonString = e.feature.getGeometry().getCoordinates();
+        // this.polygonString = this.polygonString.getGeometry().transform('EPSG:3857', 'EPSG:4326').getCoordinates();
+        console.log('--------------Draw Coordinate Points:' + this.polygonString);
       });
-
-      snap = new Snap({ source: source });
-
+      snap = new Snap({ source: sourcegeojson });
       map.addInteraction(snap);
     }
 
     /**
      * Handle change event.
      */
-    typeSelect.onchange = function () {
+    typeSelect.onchange = function (e) {
       map.removeInteraction(draw);
       map.removeInteraction(snap);
       addInteractions();
     };
     addInteractions();
+
   }
+
 
 }

@@ -1,27 +1,30 @@
-# Geospatial
+# Node.js+Angular+OpenLayers+JavaScript+TypeScript+GeoServer+Web GIS or Map
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.4.
+## Description and Requirements
+Hope this video will be interested in Web Map or GIS application's Front-End/GUI/UI development with JaveScript based 
+framework as like Node.js,Angular,JavaScript & TypeScript, leaflet javascript web map APIs and Geoserver to be helpful for those who are interested in.
 
-## Development server
+## Technology & Tools used:
+1.Node.js, Angular and JavaScript, TypeScript, OpenLayers javasrcipt web map APIs and GeoServer\
+2.Angular Component Libraries(Prime NG,NGX Bootstrap,NG Bootstrap,NG2 Charts and so on)\
+3.OpenStreet map, GeoServer, OpenLayers and other JavaScript libraries\
+4.PostgreSQL with PostGIS database (back-end server)\
+5.Java, Spring Data JPA, REST APIs & Microservices\
+6.Proxy Configuring Setup and Microservices /APIs Rewrite the URL path\
+7.tar based packaging(geospatial-0.1.0.1.tar)\
+8.Docker Image and Docker Container\
+9.Functional or Web GUI/UI testing (Selenium)\
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+[YouTube Playlist] (https://www.youtube.com/playlist?list=PL61PaxtHbYMoeBZPjK6edf9KKbtNpy2zW)
+## 2_1:Development
+[<img src="https://img.youtube.com/vi/ej-nDNqVRVE/maxresdefault.jpg" width="100%">](https://youtu.be/ej-nDNqVRVE)
+## 2_2:Development
+[<img src="https://img.youtube.com/vi/mmgwuDDBiGY/maxresdefault.jpg" width="100%">](https://youtu.be/mmgwuDDBiGY)
+## 2_3:Development
+https://www.youtube.com/watch?v=hA3LTdkW0sw&t=5s
+[<img src="https://img.youtube.com/vi/hA3LTdkW0sw/maxresdefault.jpg" width="100%">](https://youtu.be/hA3LTdkW0sw)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

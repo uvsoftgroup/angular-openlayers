@@ -3,32 +3,16 @@ import OlMap from 'ol/Map';
 import OlXYZ from 'ol/source/XYZ';
 import OlTileLayer from 'ol/layer/Tile';
 import OlView from 'ol/View';
-import View from 'ol/View';
-import TileLayer from 'ol/layer/Tile';
 import { fromLonLat, toLonLat } from 'ol/proj';
 import Overlay from 'ol/Overlay';
 import { toStringHDMS } from 'ol/coordinate';
-import OSM from 'ol/source/OSM';
 import Style from 'ol/style/Style';
 import { Fill, Stroke, Text, Circle } from 'ol/style';
-import GeometryType from 'ol/geom/GeometryType';
 import Icon from 'ol/style/Icon';
-import Vector from 'ol/source/Vector';
-import Feature from 'ol/Feature';
-import Polygon from 'ol/geom/Polygon';
-import LineString from 'ol/geom/LineString';
-import Point from 'ol/geom/Point';
-import Projection from 'ol/proj/Projection';
-import { addCoordinateTransforms } from 'ol/proj';
-import * as olProj from 'ol/proj';
 import { transform } from 'ol/proj';
-import GeoJSON from 'ol/format/GeoJSON';
 import VectorLayer from 'ol/layer/Vector';
 import VectorSource from 'ol/source/Vector';
 import 'ol/ol.css';
-import RenderFeature from 'ol/render/Feature';
-import { PlotInfo } from 'src/app/domain_model/plot-info';
-
 
 declare const $: any;
 // Declare ol variable globally
@@ -259,7 +243,7 @@ export class MapComponent implements OnInit {
 
     });
 
-    this.map.addLayer(vectorLayer5);
+   //  this.map.addLayer(vectorLayer5);
 
     const coordinates4 = [[
       [90.3717950731516, 23.82586659797306],
@@ -283,7 +267,7 @@ export class MapComponent implements OnInit {
       source: vectorSource4,
       style: styles
     });
-    this.map.addLayer(vectorLayer4);
+    // this.map.addLayer(vectorLayer4);
 
 
     const coordinates3 = [[
@@ -306,7 +290,7 @@ export class MapComponent implements OnInit {
       source: vectorSource3,
       style: styles
     });
-    this.map.addLayer(vectorLayer3);
+    // this.map.addLayer(vectorLayer3);
 
 
     const coordinates2 = [[
@@ -330,7 +314,7 @@ export class MapComponent implements OnInit {
       source: vectorSource2,
       style: styles
     });
-    this.map.addLayer(vectorLayer2);
+     // this.map.addLayer(vectorLayer2);
 
     const coordinates1 = [[
       [90.37116475403307, 23.825633503467998],
@@ -353,7 +337,7 @@ export class MapComponent implements OnInit {
       source: vectorSource1,
       style: styles
     });
-    this.map.addLayer(vectorLayer1);
+     // this.map.addLayer(vectorLayer1);
 
     // Polygon Geometry Coordinate Points
     const coordinates = [[
@@ -386,7 +370,7 @@ export class MapComponent implements OnInit {
       style: styles
     });
     // finally add the vector layer into the map
-    this.map.addLayer(vectorLayer);
+   // this.map.addLayer(vectorLayer);
 
     // Map click event popup
     function onClick(args) {

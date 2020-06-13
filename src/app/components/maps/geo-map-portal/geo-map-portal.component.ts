@@ -1,10 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { toStringHDMS } from 'ol/coordinate';
-import VectorLayer from 'ol/layer/Vector';
-import VectorSource from 'ol/source/Vector';
 import 'ol/ol.css';
-import Style from 'ol/style/Style';
-import { Fill, Stroke, Text, Circle } from 'ol/style';
 import Overlay from 'ol/Overlay';
 import OlMap from 'ol/Map';
 import OlXYZ from 'ol/source/XYZ';
@@ -464,9 +460,10 @@ export class GeoMapPortalComponent implements OnInit {
       target: 'map',
       controls: controlsMap,
       layers: [
-        // baseMap,
+         baseMap,
         this.overlayGroupOSM,
-        this.overlayGroupApplication],
+        this.overlayGroupApplication
+      ],
         view: viewMapCenter
     });
 
