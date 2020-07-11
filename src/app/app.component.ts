@@ -4,7 +4,7 @@ import { MapComponent } from './components/map/map.component';
 
 export type EditorType = 'useraddress' | 'mapaddresses' | 'mapplots' | 'mapbuildings' | 'mapfloors' | 'geomapportal' |
   'mapunits' | 'userrigistration' | 'userole' | 'plot' | 'building' | 'floor' | 'unit'
-  | 'drawModifyVectorFeature' | 'geoservermap';
+  | 'drawModifyVectorFeature' | 'geoservermap'  | 'draganddropfeature';
 
 @Component({
   selector: 'app-root',
@@ -31,6 +31,11 @@ export class AppComponent {
   get showGeoMapPortal() {
     return this.editor === 'geomapportal';
   }
+
+  get showDraganddropfeature() {
+    return this.editor === 'draganddropfeature';
+  }
+
   get showUserMapAddresses() {
     return this.editor === 'mapaddresses';
   }

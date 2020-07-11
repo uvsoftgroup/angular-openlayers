@@ -245,6 +245,53 @@ export class GeoMapPortalComponent implements OnInit {
     source: this.osmRoadsInBD
   });
 
+
+  // thana Layer as WFS WS
+const bdThana = new ol.layer.Vector(
+  'Thana Information',
+  {
+      strategies: [new ol.loadingstrategy.bbox()]
+      , projection: new ol.proj.Projection('EPSG:4326')
+      , protocol: new ol.format.WFS({
+          version: '1.1.0',
+          url:  'http://localhost:7777/geoserver/BD_Climate_2/wfs', // geoserver URI/workspace name/format(wms or wfs)
+          featurePrefix: 'BD_Climate_2', //geoserver worspace name
+          featureType: 'bd_thana', //geoserver Layer Name
+          featureNS: 'http://bd.com/BD_Climate_2', // Edit Workspace Namespace URI Unique identifier
+          isBaseLayer: false,
+          visibility: true,
+      })
+  });
+
+/*
+bdThana.events.on({
+featureselected: function(eventThana) {
+const feature = eventThana.feature;
+const thanaName = feature.attributes.thana_name;
+const divisionName = feature.attributes.div_name;
+const districtName = feature.attributes.dist_name;
+const area = feature.attributes.area;
+const longCoord = feature.attributes.coord_long;
+const latCoord = feature.attributes.coord_lati;
+
+const contentThana = '<table border=1>' +
+'<th>Division Name</th>' +
+'<th>District Name</th>' +
+'<th>Thana Name</th>' +
+'<th>Total Area Sq.Km</th>' +
+'<th>Center Longitude</th>' +
+'<th>Center Latitude</th>' +
+'<tr><td>' + divisionName + '</td>' +
+'<td>' + districtName + '</td>' +
+'<td>' + thanaName + '</td>' +
+'<td>' + area + '</td>' +
+'<td>' + longCoord + '</td>' +
+'<td>' + latCoord + '</td></tr> </table>';
+document.getElementById('output_content_thana').innerHTML = contentThana;
+}
+});
+*/
+
     /**
      * Registered Address info from REST APIs call
      *
@@ -460,16 +507,18 @@ export class GeoMapPortalComponent implements OnInit {
       target: 'map',
       controls: controlsMap,
       layers: [
-         baseMap,
-        this.overlayGroupOSM,
-        this.overlayGroupApplication
+        baseMap,
+        bdThana,
+         this.overlayGroupOSM,
+         this.overlayGroupApplication
       ],
         view: viewMapCenter
     });
 
-    // this.layerSwitcher = new ol.control.LayerSwitcher();
-    // this.map.addControl(this.layerSwitcher);
-
+    /*
+     this.layerSwitcher = new ol.control.LayerSwitcher({});
+     this.map.addControl(this.layerSwitcher);
+    */
 
 }
 

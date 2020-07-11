@@ -1,0 +1,37 @@
+{
+              "type": "FeatureCollection",
+              "features": [
+                {
+                  "type": "Feature",
+                  "properties": {"NAME": "UVSOTGROUP", "TITLE":"BGD_UVSOTGROUP"},
+                  "geometry": {
+                    "type": "GeometryCollection",
+                    "geometries": [
+                        {
+                            "type": "LineString",
+                            "coordinates":
+                                [[90.899, 23.1602],
+                                [90.6788, 23.1298]],
+							              "properties": {"NAME": "UVSOTGROUP", "TITLE":"Test Road"}
+                        },
+                        {
+                            "type": "Polygon",
+                            "coordinates":
+                                [[[90.0878902207, 23.1602390564],
+                                  [90.931640625, 23.9228515625],
+                                  [90.8251953125, 23.0986328125],
+                                  [90.63671875, 23.96484375],
+                                  [90.0878902207, 23.1602390564]]],
+						                "properties": {"NAME": "UVSOTGROUP", "TITLE":"Test Plot"}
+                        },
+                        {
+                            "type":"Point",
+                            "coordinates":[90.557, 23.698],
+						                "properties": {"NAME": "", "TITLE":"Test POI"}
+                        }
+                    ]
+                }
+
+				      }
+              ]
+           }

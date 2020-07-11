@@ -24,11 +24,11 @@ declare const $: any;
 declare const ol: any;
 
 @Component({
-  selector: 'app-draw-modify-vector-feature',
-  templateUrl: './draw-modify-vector-feature.component.html',
-  styleUrls: ['./draw-modify-vector-feature.component.scss']
+  selector: 'app-drag-and-drop-feature',
+  templateUrl: './drag-and-drop-feature.component.html',
+  styleUrls: ['./drag-and-drop-feature.component.scss']
 })
-export class DrawModifyVectorFeatureComponent implements OnInit {
+export class DragAndDropFeatureComponent implements OnInit {
 
   coordGPSSystem: any = 'EPSG:4326';
   coordOSMSystem: any = 'EPSG:3857';
@@ -91,12 +91,13 @@ export class DrawModifyVectorFeatureComponent implements OnInit {
       format: new ol.format.GeoJSON()
     });
 
+
     const vectorgeojsonLayer = new VectorLayer({
       source: sourcegeojson,
     });
 
     const vector = new VectorLayer({
-      source: sourcegeojson,
+      source: source,
       style: new Style({
         stroke: new Stroke({
           color: '#A52A2A',
@@ -111,7 +112,7 @@ export class DrawModifyVectorFeatureComponent implements OnInit {
 
     const modify = new Modify({
       features: select.getFeatures(),
-      source: sourcegeojson
+      source: source
     });
 
     /*
@@ -175,7 +176,7 @@ export class DrawModifyVectorFeatureComponent implements OnInit {
 
       // OpenStreet Map Loading
       layers: [
-        //  rasterOSM,
+         // rasterOSM,
          // vectorgeojsonLayer,
           vector,
          this.overlayGroupOSM
@@ -187,22 +188,24 @@ export class DrawModifyVectorFeatureComponent implements OnInit {
       })
     });
 
+    // https://openlayers.org/workshop/en/vector/drag-n-drop.html
+
+    map.addInteraction(new ol.interaction.DragAndDrop({
+      source: source,
+      formatConstructors: [GPX, GeoJSON, IGC, KML, TopoJSON]
+    }));
+
+
     map.addInteraction(modify);
 
     modify.on('modifyend', function (e) {
       console.log('-----------------modifyend:' + e.features.getArray().length);
     });
 
-
-
-
     // global variable and also removable for selection
-
     content = document.getElementById('content');
     typeSelect = document.getElementById('type');
-
     console.log('--------------Geometry Selection Type:' + typeSelect.value);
-
     function addInteractions() {
       draw = new Draw({
         source: sourcegeojson,
@@ -229,20 +232,6 @@ export class DrawModifyVectorFeatureComponent implements OnInit {
       addInteractions();
     };
     addInteractions();
-
-    const clear = document.getElementById('clear');
-      clear.addEventListener('click', function() {
-      source.clear();
-      });
-
-      const format = new ol.GeoJSON({featureProjection: 'EPSG:3857'});
-      const download = document.getElementById('download');
-      source.on('change', function() {
-        const features = source.getFeatures();
-        const json = format.writeFeatures(features);
-        console.log('dgdgdgdggggggggggggggggggg' + json);
-       // download.href = 'data:text/json;charset=utf-8,' + json;
-      });
 
 
   }

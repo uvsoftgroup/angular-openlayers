@@ -32,6 +32,7 @@ import { MapComponent } from './components/map/map.component';
 import { DrawModifyVectorFeatureComponent } from './components/maps/draw-modify-vector-feature/draw-modify-vector-feature.component';
 import { GeoMapPortalComponent } from './components/maps/geo-map-portal/geo-map-portal.component';
 import { ConfigserviceService } from './services/geoserver/configservice.service';
+import { DragAndDropFeatureComponent } from './components/maps/drag-and-drop-feature/drag-and-drop-feature.component';
 
 @NgModule({
   // Components declarations
@@ -46,6 +47,7 @@ import { ConfigserviceService } from './services/geoserver/configservice.service
     ProductComponent,
     NewsComponent,
     DrawModifyVectorFeatureComponent,
+    DragAndDropFeatureComponent,
     GeoMapPortalComponent
   ],
   // Third party Components Imports

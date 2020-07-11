@@ -43,7 +43,8 @@
     "buildingRegistrationActions": "Building Registration Actions",
     "floorRegistrationActions": "Floor Registration Actions",
     "unitRegistrationActions":"Unit Registration Actions",
-    "drawModifyVectorFeature": "Vector Feature Draw & Modify"
+    "drawModifyVectorFeature": "Vector Feature Draw & Modify",
+    "draganddropfeature":"Drag and Drop Feature(s)"
   },
 
   "geo_map_actions": {
