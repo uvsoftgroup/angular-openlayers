@@ -25,6 +25,20 @@ framework as like Node.js,Angular,JavaScript & TypeScript, leaflet javascript we
 https://www.youtube.com/watch?v=hA3LTdkW0sw&t=5s
 [<img src="https://img.youtube.com/vi/hA3LTdkW0sw/maxresdefault.jpg" width="100%">](https://youtu.be/hA3LTdkW0sw)
 
+## 7_4:Development
+https://www.youtube.com/watch?v=VzouI3gdjBY
+[<img src="https://img.youtube.com/vi/VzouI3gdjBY/maxresdefault.jpg" width="100%">](https://youtu.be/VzouI3gdjBY)
 
 
+## 7_5:Development
+https://www.youtube.com/watch?v=_XrC94VLhHU
+[<img src="https://img.youtube.com/vi/_XrC94VLhHU/maxresdefault.jpg" width="100%">](https://youtu.be/_XrC94VLhHU)
+
+## 7_6:Development
+https://www.youtube.com/watch?v=1KEaF8G55RU
+[<img src="https://img.youtube.com/vi/1KEaF8G55RU/maxresdefault.jpg" width="100%">](https://youtu.be/1KEaF8G55RU)
+
+## 7_7:Development
+https://www.youtube.com/watch?v=1_JBKGHrdJ8&t=258s
+[<img src="https://img.youtube.com/vi/1_JBKGHrdJ8&t=258s/maxresdefault.jpg" width="100%">](https://youtu.be/1_JBKGHrdJ8&t=258s)
 
